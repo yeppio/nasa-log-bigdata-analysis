@@ -22,8 +22,6 @@ To answer these questions, this project will use the NASA HTTP web server log da
 
 ## 3. Reason for Dataset Selection
 
-## 3. Reason for Dataset Selection
-
 I selected the NASA HTTP log dataset because it is large enough for a big data project and has a clear log format that can be parsed with Spark. Each record contains useful fields such as timestamp, requested resource, HTTP status code, and response byte size.
 
 This makes the dataset suitable for practicing the full pipeline covered in class, including data collection, HDFS storage, Spark preprocessing, Hive/Spark SQL analysis, and visualization. Since the data can be downloaded from a public archive, the collection process can also be written as a reusable script.
@@ -122,33 +120,6 @@ nasa-log-bigdata-analysis/
 - Apache Spark documentation
 - Apache Hive documentation
 
-
-## 10. Implemented Results
-
-The pipeline was implemented and executed in the HDP Sandbox environment. NASA HTTP log files were downloaded, decompressed, uploaded to HDFS, parsed with Spark, analyzed with Spark DataFrame operations, and exported as CSV result files.
-
-Generated result files:
-- results/hourly_requests.csv
-- results/top_urls.csv
-- results/status_codes.csv
-- results/heavy_resources.csv
-
-Generated visualization files:
-- results/figures/hourly_requests.png
-- results/figures/top_urls.png
-- results/figures/status_codes.png
-- results/figures/heavy_resources.png
-
-## 11. Main Findings
-
-1. Hourly traffic analysis showed differences in request volume by hour.
-2. The most requested URLs were mainly static image resources such as NASA logo GIF files.
-3. HTTP 200 responses accounted for most requests, while 404 errors also appeared.
-4. Large shuttle mission video files generated the highest total byte traffic.
-
-## 12. AI Tool Usage
-
-ChatGPT was used for debugging command errors, organizing the README wording, and checking whether the project requirements were covered.
 
 ## 10. Implemented Results
 
