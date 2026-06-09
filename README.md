@@ -149,3 +149,30 @@ Generated visualization files:
 ## 12. AI Tool Usage
 
 ChatGPT was used for debugging command errors, organizing the README wording, and checking whether the project requirements were covered.
+
+## 10. Implemented Results
+
+The pipeline was implemented and executed in the HDP Sandbox environment. NASA HTTP log files were downloaded, decompressed, uploaded to HDFS, parsed with Spark, analyzed with Spark DataFrame operations, and exported as CSV result files.
+
+Generated result files:
+- results/hourly_requests.csv
+- results/top_urls.csv
+- results/status_codes.csv
+- results/heavy_resources.csv
+
+Generated visualization files:
+- results/figures/hourly_requests.png
+- results/figures/top_urls.png
+- results/figures/status_codes.png
+- results/figures/heavy_resources.png
+
+## 11. Main Findings
+
+1. Hourly traffic analysis showed differences in request volume by hour.
+2. The most requested URLs were mainly static image resources such as NASA logo GIF files.
+3. HTTP 200 responses accounted for most requests, while 404 errors also appeared.
+4. Large shuttle mission video files generated the highest total byte traffic.
+
+## 12. AI Tool Usage
+
+ChatGPT was used for debugging command errors, organizing README wording, and checking project requirement coverage.
